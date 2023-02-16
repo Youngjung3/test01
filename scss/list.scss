@@ -1,0 +1,143 @@
+// var
+$primary: #FFFCF1;
+$light: gray;
+$text-color: #333;
+$secondary: #9E6934;
+
+
+.product {
+    &-item {
+        border-radius: 20px;
+        &-img {
+            width: 100%;
+            position: relative;
+            box-shadow: 2px 2px 10px #ddd;
+            img {
+                width: 100%;
+                border-radius: 10px;
+                
+
+            }
+            
+
+        }
+        &-text {
+            .red {
+                color: #F27979;
+            }
+            del {
+                color: #CCC;
+                font-weight: 300;
+            }
+        }
+        .wish {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+}
+.navigation {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #9e6934;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 104px;
+    padding-left: 0;
+    margin-bottom: -59px;
+    list-style: none;
+}
+a.navigation .navigation-pills{
+    margin-left:10px;
+}
+
+.navigation-pills .nav-link.active, .navigation-pills .show>.nav-link {
+    color: #FFFCF1;
+    background-color: #9e6934;
+    border: 1px solid #9e6934;
+    border-radius: 30px;
+    
+    
+}
+a.nav-link:hover {
+    color: #FFFCF1;
+    background-color: #9e6934;
+    border: 1px solid #9e6934;
+    border-radius: 30px;
+    
+}
+a.navigation-pills:hover {
+    color: #FFFCF1;
+    background-color: #9e6934;
+    border: 1px solid #9e6934;
+    border-radius: 30px;
+    
+}
+.navigation-pills .nav-link {
+    color:#9e6934;
+    background-color: #FFFCF1;
+    border: 1px solid #9e6934;
+    border-radius: 30px;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    margin-bottom: -70px;
+    margin-top: 41px;
+}
+.text-middle {
+    text-align: center !important;
+    margin-top: -105px;
+    margin-bottom: 10.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.nav-link{
+    width:105px;
+    height:40px;
+}
+
+/* ---- button ---- */
+button {
+    padding: 3px;
+    border: 1px solid;
+    background: white;
+    color: black;
+    border-radius: 20px;
+}
+  
+  /* ---- button-group ---- */
+  
+  .button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .button-group .button {
+    float: left;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 1px;
+  }
+  
+  .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+  .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+/* clear fix */
+#grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }  
+
+@import "./font";
+@import "./mixin";
+@import "./common";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./reset";
+
+

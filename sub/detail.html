@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon//apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon//apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon//apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon//apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon//apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon//apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon//apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon//apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="192x192" href="../img/favicon//android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon//favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon//favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon//favicon-16x16.png" />
+	<link rel="manifest" href="../img/favicon//manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../img/favicon//ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+	<title>브랜드소개</title>
+	<link rel="stylesheet" href="../css/detail.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="../js/food.js"></script>
+</head>
+<body>
+	<header class="bg-primary py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 logo d-flex justify-content-center align-items-center">
+					<a href="../index.html"><img src="../img/logo/logo.svg" alt="뺏슈"></a>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+					<ul class="d-flex list-unstyled my-0">
+						<li><a href="./sub_login.html" class="text-color text-decoration-none mx-2">회원가입</a></li>
+						<li><a href="./sub_login.html" class="text-color text-decoration-none mx-2">로그인</a></li>
+						<li><a href="#" class="text-color text-decoration-none mx-2">고객센터</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="bg-primary">
+		<div class="container">
+			<div class="row flex-wrap">
+				<div id="all_menu" class="col-md-2 col-sm-5 col-6 d-flex justify-content-start align-items-center">
+					<a href="#">
+						<img src="../img/icon/menu.svg" alt="menu">
+					</a>
+				</div>
+				<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStart">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasStart"></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<h3 class="offcanvas-title text-secondary mb-4">전체메뉴</h3>
+						<ul class="px-0 ps-2 list-unstyled">
+							<li class="py-2"><a href="./about.html" class="text-color text-decoration-none">브랜드 소개</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">새소식</a></li>
+							<li class="py-2"><a href="./list.html" class="text-color text-decoration-none">제품</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">정기 배송</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">선물</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">이벤트</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">고객센터</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">Q&A</a></li>
+							<li class="py-2"><div class="menu_line border-top pt-2 d-block" style="border-color: black; width: 60px;"></div></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">SNS</a>
+								<ul class="row sns_list ps-3">
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Instagram</span><img src="../img/icon/insta.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Kakaotalk</span><img src="../img/icon/kakaotalk.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Facebook</span><img src="../img/icon/facebook.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Twitter</span><img src="../img/icon/twitter.svg" alt=""></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="d-none col-md-8 col-sm-2 logo d-sm-flex justify-content-sm-between justify-content-md-center align-items-center">
+				<ul class="d-none d-lg-flex my-0 list-unstyled">
+					<li><a href="./about.html" class="text-color text-decoration-none mx-3">브랜드 소개</a></li>
+					<li><a href="./list.html" class="text-color text-decoration-none mx-3">제품</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">정기 배송</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">선물</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">이벤트</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">리뷰</a></li>
+				</ul>
+				</div>
+				<div class="col-md-2 col-sm-5 col-6 d-flex justify-content-end align-items-center">
+					<ul class="d-flex list-unstyled my-3">
+						<li><a href="#" class="text-color text-decoration-none mx-2"><img src="../img/icon/search.svg" alt="search"></a></li>
+						<li><a href="#" class="text-color text-decoration-none mx-2"><img src="../img/icon/cart.svg" alt="cart"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section-padding-3" data-aos="fade-up" data-aos-duration="2500">
+	<div class="container">
+		<div class="row product-item-list">
+			<div class="product-item-3">
+				<div class="product-item-img">
+					<img src="../img/detail/detail.png" class="col-6 " alt="product1">
+					<div class=" col-6 ">
+					<span class="name" id="product_name"> </span>
+					<div class="product-item-text mt-8 text-end d-block"> <span class="gray m-30 ">2,000원</span><span class="red">25% <span class="black">2,200원</div>
+					<div class="price">
+						<p class="m-4">
+							<ul>
+								<li>수량 <input type='button' class="plus"
+									onclick='count("plus")'
+									value='+'/><span id='result2'>1</span><input type='button' class="minus"
+									onclick='count("minus")'
+									value='-'/></li>
+								<li class="py-3">총 가격 <span id="result">2,200원</span></li>
+								<li>적립</li>
+							</ul>
+						</p>
+					</div>
+					<div class="button-two">
+						<button class="purchase m-3">장바구니</button>
+						<button class="shopping bg-secondary">구매하기</button>
+					</div>															
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section class="section-padding-3 mt-5" data-aos="fade-up" data-aos-duration="2500">
+		<div class="container">
+			<div class="row product-item-list text-center">
+					<span class="col-4 brown">상세정보</span>
+					<span class="col-4 tap">리뷰</span>
+					<span class="col-4 tap">문의</span>
+					<div class="text-center">
+						<table class="table">
+							<tr>
+								<th scope="col">1회 제공량</th>
+								<td scope="col" id="product_serv"></td>
+							</tr>
+							<tr>
+								<th scope="col">열량</th>
+								<td scope="col" id="product_info1"></td>
+							</tr>
+							<tr>
+								<th scope="col">탄수화물</th>
+								<td scope="col" id="product_info2"></td>
+							</tr>
+							<tr>
+								<th scope="col">단백질</th>
+								<td scope="col" id="product_info3"></td>
+							</tr>
+							<tr>
+								<th scope="col">지방</th>
+								<td scope="col" id="product_info4"></td>
+							</tr>
+							<tr>
+								<th scope="col">당류</th>
+								<td scope="col" id="product_info5"></td>
+							</tr>
+							<tr>
+								<th scope="col">나트륨</th>
+								<td scope="col" id="product_info6"></td>
+							</tr>
+							<tr>
+								<th scope="col">콜레스테롤</th>
+								<td scope="col" id="product_info7"></td>
+							</tr>
+							<tr>
+								<th scope="col">포화지방산</th>
+								<td scope="col" id="product_info8"></td>
+							</tr>
+							<tr>
+								<th scope="col">트랜스지방산</th>
+								<td scope="col" id="product_info9"></td>
+							</tr>
+						</table>
+						<img src="../img/detail/main.png" class="w-67 text-center mt-4 mb-5" alt="product1">			
+				     </div>
+					 <div><button class="more mb-5">상품 더보기</button>	</div>
+					 <span class="col-4 tap">상세정보</span>
+					<span class="col-4 brown">리뷰</span>
+					<span class="col-4 tap">문의</span>
+					<div class="p-6">
+						<span>작성된 리뷰가 없습니다</span>
+					</div>
+					<hr class="mb-5">
+					<span class="col-4 tap">상세정보</span>
+					<span class="col-4 tap">리뷰</span>
+					<span class="col-4 brown">문의</span>
+					<div class="mt-5">
+						<div class="p-6"><span>작성된 문의가 없습니다.</span></div>
+					</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer class="border-bottom">
+		<div class="container">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+				<div class="col-6 d-flex align-items-center">
+					<ul class="d-flex mb-0 ps-0 gap-3">
+						<li><a href="#" class="text-color text-decoration-none">이용약관</a></li>
+						<li><a href="#" class="text-color text-decoration-none">고객센터</a></li>
+						<li><a href="#" class="text-color text-decoration-none"><b>개인정보처리방침</b></a></li>
+					</ul>
+				</div>
+				<ul class="col-6 nav mt-4 mt-sm-0 justify-content-end list-unstyled d-flex">
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/insta.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/kakaotalk.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/facebook.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="../img/icon/twitter.svg" alt=""></a></li>
+				</ul>
+			</footer>
+		</div>
+	</footer>
+	<footer>
+		<div class="container">
+			<footer class="row py-3 my-4">
+				<div class="col-12 col-md-4 d-flex justify-content-start align-items-center">
+					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+						<img src="../img/logo/f_logo.svg" style="max-width: 200px;" alt="footer">
+					</a>
+				</div>
+				<ul class="pe-0 px-3 py-3 py-sm-0 col-12 col-md-4 nav align-items-center text-size-12">
+					<li class="nav-item col-12 mb-sm-2">
+						(주)뺏슈 대표이사 : 홍길동 <br>통신판매 신고번호 : 2023-서울강남-1234 <br>사업자 등록번호 : 123-45-6789<br> 
+					</li>
+					<li class="nav-item col-12 mb-sm-2">주소 : 서울특별시 가나다구 라바사로 123 (가나빌딩) 3층 <br>메일 : hongildong1234@gmail.com</li>
+					<li class="nav-item col-12 mb-sm-2 copy"><b>copyright © bbatsue. All rights reserved.</b></li>
+				</ul>
+				<ul class="col-12 col-md-4 ps-md-5 text-size-12">
+					<li class="mb-1">고객문의 02-123-5678</li>
+					<li class="mb-1">점심시간 PM 12:00 ~ PM 01:00</li>
+					<li class="mb-1">평일 상담 AM 10:00 ~ PM 04:30</li>
+					<li><span class="text-light text-size-12">국민은행</span> 123456-78-912345</li>
+					<li><span class="text-light text-size-12">입금자명</span> 홍길동</li>
+				</ul>
+			</footer>
+		</div>
+	</footer>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="../js/buttonpls.js"></script>
+	
+	<script>
+		AOS.init();
+	</script>
+	<script>
+		let menu = document.querySelector('#all_menu');
+		let canvas = document.querySelector('#offcanvasStart');
+		let closeBtn = document.querySelector('.btn-close');
+		let menuClickHandler = (event) => {
+			event.preventDefault();
+			canvas.style.transform = 'translate(0)';
+			canvas.style.visibility = 'visible';
+		}
+		let closeBtnClickHandler = () => {
+			canvas.style.transform = 'translate(-100%)';
+			canvas.style.visibility = 'hidden';
+		}
+		menu.addEventListener("click", menuClickHandler);
+		closeBtn.addEventListener('click', closeBtnClickHandler);
+	</script>
+</body>
+</html>

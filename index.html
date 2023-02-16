@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="./img/favicon//apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="./img/favicon//apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="./img/favicon//apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="./img/favicon//apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="./img/favicon//apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="./img/favicon//apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="./img/favicon//apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon//apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="192x192" href="./img/favicon//android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon//favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon//favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png" />
+	<link rel="manifest" href="./img/favicon//manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="./image/favicon//ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+	<title>뺏슈</title>
+	<link rel="stylesheet" href="css/main.min.css" />
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+	<div class="offcanvas-over"></div>
+	<header class="bg-primary py-4 main_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 logo d-flex justify-content-center align-items-center">
+					<a href="#"><img src="./img/logo/logo.svg" alt="뺏슈"></a>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+					<ul class="d-flex list-unstyled my-0">
+						<li><a href="#" class="text-color text-black text-decoration-none mx-2">회원가입</a></li>
+						<li class="loginLi"><a href="#" class="text-color text-black text-decoration-none mx-2">로그인</a></li>
+						<li class="logOutLi"><a href="#" class="text-color text-black text-decoration-none mx-2">로그아웃</a></li>
+						<li><a href="#" class="text-color text-black text-decoration-none mx-2">고객센터</a></li>
+					</ul>
+					<span class="greeting hidden"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="bg-primary">
+		<div class="container">
+			<div class="row flex-wrap">
+				<div id="all_menu" class="col-md-2 col-sm-5 col-6 d-flex justify-content-start align-items-center">
+					<a href="#">
+						<img src="./img/icon/menu.svg" alt="menu">
+					</a>
+				</div>
+				<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStart">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasStart"></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<h3 class="offcanvas-title text-secondary mb-4">전체메뉴</h3>
+						<ul class="px-0 ps-2 list-unstyled">
+							<li class="py-2"><a href="./sub/about.html" class="text-color text-decoration-none">브랜드 소개</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">새소식</a></li>
+							<li class="py-2"><a href="./sub/list.html" class="text-color text-decoration-none">제품</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">정기 배송</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">선물</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">이벤트</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">고객센터</a></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">Q&A</a></li>
+							<li class="py-2"><div class="menu_line border-top pt-2 d-block" style="border-color: black; width: 60px;"></div></li>
+							<li class="py-2"><a href="#" class="text-color text-decoration-none">SNS</a>
+								<ul class="row sns_list ps-3">
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Instagram</span><img src="./img/icon/insta.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Kakaotalk</span><img src="./img/icon/kakaotalk.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Facebook</span><img src="./img/icon/facebook.svg" alt=""></a></li>
+									<li class="col-md-6"><a class="text-color my-3 d-flex justify-content-between align-items-end text-decoration-none" href="#"><span>Twitter</span><img src="./img/icon/twitter.svg" alt=""></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="d-none col-md-8 col-sm-2 logo d-sm-flex justify-content-sm-between justify-content-md-center align-items-center">
+				<ul class="d-none d-lg-flex my-0 list-unstyled">
+					<li><a href="./sub/about.html" class="text-color text-decoration-none mx-3">브랜드 소개</a></li>
+					<li><a href="./sub/list.html" class="text-color text-decoration-none mx-3">제품</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">정기 배송</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">선물</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">이벤트</a></li>
+					<li><a href="#" class="text-color text-decoration-none mx-3">리뷰</a></li>
+				</ul>
+				</div>
+				<div class="col-md-2 col-sm-5 col-6 d-flex justify-content-end align-items-center">
+					<ul class="d-flex list-unstyled my-3">
+						<li><a href="#" class="text-color text-decoration-none mx-2"><img src="./img/icon/search.svg" alt="search"></a></li>
+						<li><a href="#" class="text-color text-decoration-none mx-2"><img src="./img/icon/cart.svg" alt="cart"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="login_wrap_overlay hidden"></div>
+	<div class="login_wrap hidden">
+		<main>
+			<!-- login -->
+			<section id="login">
+				<div class="container-xxl">
+					<div class="row">
+						<div class="login_form_wrap bg-white px-0">
+							<div class="login_form col-xxl-8 col-md-8 col-sm mx-auto">
+								<h2 class="title m-0">로그인</h2>
+								<a class="close_btn"><img src="./img/icon/close.svg" alt=""></a>
+								<form id="login_form" action="post" class="text_muted">
+									<div class="user_account">
+										<div class="form-floating user_id">
+											<input type="text" class="form-control" id="floatingInput" placeholder="아이디" required>
+											<label for="floatingInput">아이디</label>
+										</div>
+										<div class="form-floating user_pw">
+											<input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호" required>
+											<label for="floatingPassword">비밀번호</label>
+										</div>
+									</div>
+									<!-- //user_account -->
+									<div class="user_info d-flex flex-row justify-content-between">
+										<div class="save_id">
+											<input type="checkbox" value="" id="saveId" name="saveId">
+											<label for="saveId" class="fw-bold">아이디 저장</label>
+										</div>
+										<ul class="d-flex m-0 px-0">
+											<li class="fw-bold"><a href="#">회원가입</a></li>
+											<li class="fw-bold"><a href="#">계정 찾기</a></li>
+											<li class="fw-bold"><a href="#">비밀번호 찾기</a></li>
+										</ul>
+									</div>
+									<!-- //user_info -->
+									<div class="d-grid">
+										<input class="login d-inline-block bg-secondary text-white" type="submit" value="로그인">
+										<p class="or text-center mb-0"><span>또는</span></p>
+										<button class="kakao_login btn d-inline-block text-center" type="button">
+											<img src="./img/icon/kakaotalk.svg" alt="">
+											<span>카카오 로그인 / 회원가입</span>
+										</button>
+									</div>
+									<!-- // login button -->
+								</form>
+								<div class="kakao_sink">
+										<p class="mb-0 fw-bold">카카오 1초 로그인/회원가입 이란?</p>
+										<ul class="m-0 px-0">
+											<li class="fw-bold">카카오 싱크를 활용한 간편 로그인/가입 기능입니다.</li>
+											<li class="fw-bold">BBATSUE X 카카오싱크 부스터</li>
+										</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //login -->
+		</main>
+		<!-- footer -->
+		<footer id="footer">
+			<div class="container-xxl">
+				<div class="row">
+					<div class="footer_wrap bg-white">
+						<div class="footer col-xxl-6 col-xl-8 col-lg-8 col-md-8 col-sm mx-auto px-0 d-flex flex-xxl-row-reverse flex-lg-column flex-md-column flex-sm-column justify-content-xxl-between justify-content-lg-around justify-content-md-around justify-content-sm-around">
+							<div class="info d-inline-block">
+								<ul class="d-flex justify-content-end mb-0 px-0">
+									<li><a href="#">이용약관</a></li>
+									<li><a href="#">고객센터</a></li>
+									<li><a href="#" class="fw-bold">개인정보처리방침</a></li>
+								</ul>
+							</div>
+							<div class="copy d-inline-block">
+								<p class="mb-0 fw-bold">copyright © bbatsue. All rights reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+	<!-- <section>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./img/main/main_slide1.png" class="d-block w-100" alt="main-slide-img1">
+				</div>
+				<div class="carousel-item">
+					<img src="./img/main/main_slide1.png" class="d-block w-100" alt="main-slide-img2">
+				</div>
+				<div class="carousel-item">
+					<img src="./img/main/main_slide1.png" class="d-block w-100" alt="main-slide-img3">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section> -->
+	<section class="main-slider">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide w-100">
+					<img src="./img/main/main_slide1.png" alt="홈페이지 슬라이더 사진1" class="w-100" />
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/main/main_slide1.png" alt="홈페이지 슬라이더 사진2" class="w-100" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-padding" data-aos="fade-up" data-aos-duration="2500">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<h1 class="text-center section-text-color section-title">BEST</h1>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+					<a href="./sub/list.html" class="text-color text-decoration-none">더보기  <img src="./img/icon/arrow_right.svg" alt="view more"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row product-item-list">
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best1.jpg" alt="best1">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>고단백 크림마들렌</b><br>
+							<span class="red">10%</span> <b>2,000원</b> <del class="text-size-12">2,200원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best2.jpg" alt="best2">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>당근케이크</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best3.jpg" alt="best3">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>호밀빵</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best4.jpg" alt="best4">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>티라미수</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="row product-item-list">
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best5.png" alt="best5">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>크로와상</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best6.png" alt="best6">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>참깨빵샌드위치</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best7.jpg" alt="best7">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저당녹차케이크</b><br>
+							<span class="red">10%</span> <b>7,000원</b> <del class="text-size-12">7,800원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="./sub/detail.html" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/best8.png" alt="best8">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>호밀식빵</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-padding-2 section-bg-color" data-aos="fade-up" data-aos-duration="2500">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<h1 class="text-center section-text-color section-title">NEW</h1>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+					<a href="#" class="text-color text-decoration-none">더보기  <img src="./img/icon/arrow_right.svg" alt="view more"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row product-item-list">
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/new1.png" alt="new1">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>흑임자크림빵</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/new2.png" alt="new2">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저탄수 고단백 귀리우유식빵</b><br>
+							<span class="red">10%</span> <b>5,850원</b> <del class="text-size-12">6,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/new3.png" alt="new3">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저당오색마카롱</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/new4.png" alt="new4">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저당단팥크림빵</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+			</div>
+			<!-- <div class="row product-item-list">
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/product1.png" alt="product1">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+							<span class="red">10%</span> <b class="price">4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/product1.png" alt="product1">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/product1.png" alt="product1">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+				<div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/product1.png" alt="product1">
+							<div class="wish"><img src="./img/icon/heart.svg" alt="wish"></div>
+						</div>
+						<p class="product-item-text mt-3">
+							<b>저탄수 고단백 깜빠뉴 샌드위치</b><br>
+							<span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+						</p>
+					</a>
+				</div>
+			</div> -->
+		</div>
+	</section>
+	<section class="section-padding" data-aos="fade-up" data-aos-duration="2500">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<h1 class="text-center section-text-color section-title">EVENT</h1>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+					<a href="#" class="text-color text-decoration-none">더보기  <img src="./img/icon/arrow_right.svg" alt="view more"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row event-item-list">
+				<div class="my-2 col-12 col-lg-4 col-sm-12 my-sm-3 d-flex justify-content-center event-item"><a href="#"><img src="./img/event/event_items.png" class="w-100" alt=""></a></div>
+				<div class="my-2 col-12 col-lg-4 col-sm-12 my-sm-3 d-flex justify-content-center event-item"><a href="#"><img src="./img/event/event_items.png" class="w-100" alt=""></a></div>
+				<div class="my-2 col-12 col-lg-4 col-sm-12 my-sm-3 d-flex justify-content-center event-item"><a href="#"><img src="./img/event/event_items.png" class="w-100" alt=""></a></div>
+			</div>
+		</div>
+	</section>
+	<section class="section-padding-3 section-bg-image section-bg-color">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<h1 class="text-center text-white section-title">INSTAGRAM REVIEW</h1>
+				</div>
+				<div class="col-lg-4 d-flex justify-content-end align-items-center">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row event-item-list">
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="card px-0">
+							<div class="row g-0">
+							  <div class="col-6 col-sm-6">
+								<img src="./img/product/review3.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+							  </div>
+							  <div class="col-6 col-sm-6">
+								<div class="card-body">
+								  <h1 class="card-title">뺏슈 케이크 리뷰</h1>
+								  <p class="card-text">우리는 얼그레이 케이크를 골랐다. 인스타에서 가장 많이 보였던 거 같다. <br>
+									케이크는 직접 집어서 접시에 올리는 것이었다. <br>
+									정말 많은 사람들이 상상한다는 카페에서 음료와 케이크 쏟기, 무서웠다 (ⅈ▱ⅈ) <br>
+									하지만 이런 건 무심하게 들어서 툭 놔 줘야 잘 되는 것이다.<br>
+									닭 인형과 사진을 찍어줬다. <br>
+									얼그레이 케이크, 겉 보기에는 보라색 맛이 많이 날 것 같은데 그렇지 않다. <br>
+									역시 얼그레이 케이크야. <br>
+									다음엔 다른 케이크도 먹어 봐야지. <br>
+									생각 같아선 종류별로 한 조각씩 8조각 시켜놓고 한 판 만들고 싶다. <br>
+									원없이 퍼먹고 싶다 ㅜㅜ<br>
+									</p>
+								  <p class="card-text"><small class="text-muted">2021년 11월 23일</small></p>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-padding section-bg-color" data-aos="fade-up" data-aos-duration="2500">
+		<div class="container">
+			<div class="row review-item-list">
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review1.jpg" alt="review1">
+						</div>
+					</a>
+				</div>
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review2.jpg" alt="review2">
+						</div>
+					</a>
+				</div>
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review3.jpg" alt="review3">
+						</div>
+					</a>
+				</div>
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review4.jpg" alt="review4">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row review-item-list">
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review5.png" alt="review5">
+						</div>
+					</a>
+				</div>
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review6.png" alt="review6">
+						</div>
+					</a>
+				</div>
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 my-lg-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review7.png" alt="review7">
+						</div>
+					</a>
+				</div>
+				<div class="my-2 col-6 col-lg-3 col-sm-6 my-sm-2 my-lg-2 review-item">
+					<a href="#" class="text-decoration-none text-color">
+						<div class="product-item-img">
+							<img src="./img/product/review8.jpg" alt="review8">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="border-bottom">
+		<div class="container">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+				<div class="col-6 d-flex align-items-center">
+					<ul class="d-flex mb-0 ps-0 gap-3">
+						<li><a href="#" class="text-color text-decoration-none">이용약관</a></li>
+						<li><a href="#" class="text-color text-decoration-none">고객센터</a></li>
+						<li><a href="#" class="text-color text-decoration-none"><b>개인정보처리방침</b></a></li>
+					</ul>
+				</div>
+				<ul class="col-6 nav mt-4 mt-sm-0 justify-content-end list-unstyled d-flex">
+					<li class="ms-3"><a class="text-muted" href="#"><img src="./img/icon/insta.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="./img/icon/kakaotalk.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="./img/icon/facebook.svg" alt=""></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><img src="./img/icon/twitter.svg" alt=""></a></li>
+				</ul>
+			</footer>
+		</div>
+	</footer>
+	<footer>
+		<div class="container">
+			<footer class="row py-3 my-4">
+				<div class="col-12 col-md-4 d-flex justify-content-start align-items-center">
+					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+						<img src="./img/logo/f_logo.svg" style="max-width: 200px;" alt="footer">
+					</a>
+				</div>
+				<ul class="pe-0 px-3 py-3 py-sm-0 col-12 col-md-4 nav align-items-center text-size-12">
+					<li class="nav-item col-12 mb-sm-2">
+						(주)뺏슈 대표이사 : 홍길동 <br>통신판매 신고번호 : 2023-서울강남-1234 <br>사업자 등록번호 : 123-45-6789<br> 
+					</li>
+					<li class="nav-item col-12 mb-sm-2">주소 : 서울특별시 가나다구 라바사로 123 (가나빌딩) 3층 <br>메일 : hongildong1234@gmail.com</li>
+					<li class="nav-item col-12 mb-sm-2 copy"><b>copyright © bbatsue. All rights reserved.</b></li>
+				</ul>
+				<ul class="col-12 col-md-4 ps-md-5 text-size-12">
+					<li class="mb-1">고객문의 02-123-5678</li>
+					<li class="mb-1">점심시간 PM 12:00 ~ PM 01:00</li>
+					<li class="mb-1">평일 상담 AM 10:00 ~ PM 04:30</li>
+					<li><span class="text-light text-size-12">국민은행</span> 123456-78-912345</li>
+					<li><span class="text-light text-size-12">입금자명</span> 홍길동</li>
+				</ul>
+			</footer>
+		</div>
+	</footer>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./js/login.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	
+	<script>
+		AOS.init();
+	</script>
+	<script>
+		$(function(){
+			new Swiper('.swiper', {
+				loop: false,
+				autoplay: true,
+				scrollbar : {
+					el : '.swiper-scrollbar',
+					draggable: false,
+				},
+				pagination: { 
+					el: ".swiper-pagination", 
+					type : 'fraction',
+				},
+			});
+		});
+
+		let menu = document.querySelector('#all_menu');
+		let canvas = document.querySelector('#offcanvasStart');
+		let closeBtn = document.querySelector('.btn-close');
+		let over = document.querySelector('.offcanvas-over');
+		let menuClickHandler = (event) => {
+			event.preventDefault();
+			canvas.style.transform = 'translate(0)';
+			canvas.style.visibility = 'visible';
+			over.style.display = 'block';
+		}
+		let closeBtnClickHandler = () => {
+			canvas.style.transform = 'translate(-100%)';
+			canvas.style.visibility = 'hidden';
+			over.style.display = 'none';
+		}
+		menu.addEventListener("click", menuClickHandler);
+		closeBtn.addEventListener('click', closeBtnClickHandler);
+	</script>
+</body>
+</html>

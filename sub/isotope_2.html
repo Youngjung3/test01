@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/list.min.css" />
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #eee;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.2)
+  );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8cf;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28f;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child {
+  border-radius: 0.5em 0 0 0.5em;
+}
+.button-group .button:last-child {
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+/* ---- isotope ---- */
+
+/* .grid {
+  border: 1px solid #333;
+} */
+
+/* clear fix */
+/* .grid:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="option">
+        <div class="option-set" data-isotope-key="filter">
+            <button data-isotope-value=".popular">인기BEST3</button>
+            <button data-isotope-value=".review">리뷰BEST3</button>
+            <button data-isotope-value=".recommend">추천BEST3</button>
+        </div>
+    </div>
+    <div id="container" class="grid">
+        <div class="element-item ele review">01 review
+            <div class="col-6 col-lg-3 col-sm-6 col-xs-6 col-xxl-3 product-item">
+                <a href="#" class="text-decoration-none text-color">
+                    <div class="product-item-img">
+                        <img src="../img/product/product1_new.jpg" alt="product1">
+                        <div class="wish"><img src="../img/icon/heart.svg" alt="wish"></div>
+                    </div>
+                    <p class="product-item-text mt-3">
+                        <b>저탄수 고단백 귀리우유식빵</b><br>
+                        <span class="red">10%</span> <b>4,900원</b> <del class="text-size-12">5,500원</del>
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="element-item ele popular">02 metal food</div>
+        <div class="element-item ele popular">03</div>
+        <div class="element-item ele recommend">04 food</div>
+        <div class="element-item ele popular">05</div>
+    </div>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        const grid=document.querySelector("#container");
+        //isotope 초기화
+        const iso=new Isotope(grid,{
+            //조회할 데이터 요소
+            itemSelector:'.ele',
+            layoutMode:'fitRows',
+        })
+        const opt=document.querySelector("#option");
+
+        opt.addEventListener('click',function(e){
+            let key=e.target.parentNode.getAttribute('data-isotope-key');
+            let value=e.target.getAttribute('data-isotope-value');
+            console.log(value);
+            //console.log(e.target.parentNode.getAttribute('data-isotope-key'));
+            //클릭시 필터링할 문자열을 취득
+            iso.options[key]=value;
+            //42번에서 취득한 조건에 맞는 요소만 필터링
+            iso.arrange();
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../php"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "xampp"
+	}
+}

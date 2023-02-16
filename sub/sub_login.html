@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>뺏슈</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../css/login.css">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon//apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon//apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon//apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon//apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon//apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon//apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon//apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon//apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="../img/favicon//android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon//favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon//favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon//favicon-16x16.png">
+	<link rel="manifest" href="../img/favicon//manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./image/favicon//ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+		<div class="login_wrap hidden bg-white">
+			<!-- header -->
+			<header id="header">
+				<div class="container-xxl">
+					<div class="row justify-content-center">
+						<div class="header py-xxl-5 py-md-4 py-sm-3 px-0 col-8 d-flex justify-content-center ">
+							<h1 class="logo m-0">
+								<a href="../index.html">
+									<img src="../img/logo/logo.svg" alt="뺏슈">
+								</a>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- //heder -->
+			<main>
+				<!-- login -->
+				<section id="login">
+					<div class="container-xxl">
+						<div class="row">
+							<div class="login_form col-8 mx-auto">
+								<h2 class="title m-0">로그인</h2>
+								<a class="close_btn"><img src="../img/icon/close.svg" alt=""></a>
+								<form id="login_form" action="post" class="text_muted">
+									<div class="user_account">
+										<div class="form-floating user_id">
+											<input type="text" class="form-control" id="floatingInput" placeholder="아이디" required>
+											<label for="floatingInput">아이디</label>
+										</div>
+										<div class="form-floating user_pw">
+											<input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호" required>
+											<label for="floatingPassword">비밀번호</label>
+										</div>
+									</div>
+									<!-- //user_account -->
+									<div class="user_info d-flex flex-row justify-content-between">
+										<div class="save_id">
+											<input type="checkbox" value="" id="saveId" name="saveId">
+											<label for="saveId" class="fw-bold">아이디 저장</label>
+										</div>
+										<ul class="d-flex m-0 px-0">
+											<li class="fw-bold"><a href="#">회원가입</a></li>
+											<li class="fw-bold"><a href="#">계정 찾기</a></li>
+											<li class="fw-bold"><a href="#">비밀번호 찾기</a></li>
+										</ul>
+									</div>
+									<!-- //user_info -->
+									<div class="d-grid">
+										<input class="login d-inline-block bg-secondary text-white" type="submit" value="로그인">
+										<p class="or text-center mb-0"><span>또는</span></p>
+										<button class="kakao_login btn d-inline-block text-center" type="button">
+											<img src="../img/icon/kakaotalk.svg" alt="">
+											<span>카카오 로그인 / 회원가입</span>
+										</button>
+									</div>
+									<!-- // login button -->
+								</form>
+								<div class="kakao_sink">
+										<p class="mb-0 fw-bold">카카오 1초 로그인/회원가입 이란?</p>
+										<ul class="m-0 px-0">
+											<li class="fw-bold">카카오 싱크를 활용한 간편 로그인/가입 기능입니다.</li>
+											<li class="fw-bold">BBATSUE X 카카오싱크 부스터</li>
+										</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //login -->
+			</main>
+			<!-- footer -->
+			<footer id="footer">
+				<div class="container-xxl">
+					<div class="row">
+						<div class="footer col-6 col-sm mx-auto px-0 d-flex flex-xxl-row-reverse flex-lg-row-reverse flex-md-column flex-sm-column justify-content-xxl-between justify-content-lg-between justify-content-md-around justify-content-sm-around">
+							<div class="info d-inline-block">
+								<ul class="d-flex justify-content-end mb-0 px-0">
+									<li><a href="#">이용약관</a></li>
+									<li><a href="#">고객센터</a></li>
+									<li><a href="#" class="fw-bold">개인정보처리방침</a></li>
+								</ul>
+							</div>
+							<div class="copy d-inline-block">
+								<p class="mb-0 fw-bold">copyright © bbatsue. All rights reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- //footer -->
+		</div>
+
+	<!-- script -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<!-- <script src="../js/login.js"></script> -->
+</body>
+</html>

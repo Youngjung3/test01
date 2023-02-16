@@ -1,0 +1,19 @@
+// var
+$primary: #FFFCF1;
+$light: gray;
+$text-color: #333;
+$secondary: #9E6934;
+
+// about
+.bg-img {
+    background-image: url(../img/sub/about_bg.png);
+}
+
+@import "./font";
+@import "./mixin";
+@import "./common";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./reset";
+
+
